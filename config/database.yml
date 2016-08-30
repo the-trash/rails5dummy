@@ -1,0 +1,39 @@
+### SQLite ###
+development:
+  adapter: sqlite3
+  database: db/the_role_dev.db
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: sqlite3
+  database: db/the_role_test.db
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: sqlite3
+  database: db/the_role_prod.db
+  pool: 5
+  timeout: 5000
+
+### PostgreSQL ###
+# development:
+#   pool: 5
+#   timeout: 5000
+#   host: localhost
+#   adapter:  postgresql
+#   username: admin
+#   password:
+#   database: the_role
+#   min_messages: ERROR
+
+# test:
+#   pool: 5
+#   timeout: 5000
+#   host: localhost
+#   adapter:  postgresql
+#   username: admin
+#   password:
+#   database: the_role
+#   min_messages: ERROR

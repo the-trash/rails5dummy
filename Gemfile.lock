@@ -86,7 +86,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.1)
-    autoprefixer-rails (6.4.0.3)
+    autoprefixer-rails (6.5.3)
       execjs
     bcrypt (3.1.11)
     bootstrap-sass (3.3.7)
@@ -224,13 +224,13 @@ GEM
       power_assert
     the_notification (0.5.1)
       slim
-    the_role (3.5)
-      the_role_api (~> 3.5)
+    the_role (3.7)
+      the_role_api (~> 3.7)
       the_role_management_panel (~> 3.5)
-    the_role_api (3.5)
+    the_role_api (3.7)
       multi_json
       rails (>= 3.2, < 6)
-      the_string_to_slug (~> 1.2)
+      the_string_to_slug (~> 1.4)
     the_role_management_panel (3.5)
       bootstrap-sass (~> 3.3, >= 3.3.1)
       coffee-rails
@@ -238,7 +238,7 @@ GEM
       rails (>= 3, < 6)
       sass-rails
       the_notification (~> 0.5.1)
-    the_string_to_slug (1.2)
+    the_string_to_slug (1.4)
       rails-i18n (~> 4.0.0.pre)
     thor (0.19.1)
     thread_safe (0.3.5)
@@ -283,9 +283,9 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sqlite3
   test-unit
-  the_role (~> 3.5)
+  the_role (~> 3.7)
   turbolinks (~> 5)
   uglifier (>= 1.3.0)
 
 BUNDLED WITH
-   1.10.6
+   1.13.4

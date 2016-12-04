@@ -14,7 +14,8 @@ gem 'sqlite3'
 gem 'devise'
 
 #~~~~~~~~~~~~~~~~~ TheRole ~~~~~~~~~~~~~~~~~#
-gem 'the_role', '~> 3.5'
+gem 'the_role', '~> 3.7'
+# gem 'the_string_to_slug', path: './../the_string_to_slug'
 
 # Other
 gem 'faker'

@@ -2,6 +2,8 @@
 
 git clone
 
-rake db:bootstrap_and_seed
+RAILS_ENV=development bundle install
 
-rails s
+bundle exec rake db:bootstrap_and_seed
+
+bundle exec rails s

@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'puma', '~> 3.0'
@@ -12,10 +11,29 @@ gem 'sqlite3'
 
 # User Model
 gem 'devise'
+gem 'haml-rails'
 
 #~~~~~~~~~~~~~~~~~ TheRole ~~~~~~~~~~~~~~~~~#
-gem 'the_role', '~> 3.7'
-# gem 'the_string_to_slug', path: './../the_string_to_slug'
+
+if ENV['RAILS_ENV'] != 'development'
+  gem 'the_role', '3.8'
+else
+  gem 'the_role',
+    path: '../the_role',
+    branch: 'master'
+
+  gem 'the_role_api',
+    path: '../the_role_api',
+    branch: 'master'
+
+  gem 'the_role_management_panel',
+    path: '../the_role_management_panel',
+    branch: 'Beartech-add_div_ids'
+
+  gem 'the_string_to_slug',
+    path: '../the_string_to_slug',
+    branch: 'master'
+end
 
 # Other
 gem 'faker'

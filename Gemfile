@@ -14,24 +14,15 @@ gem 'haml-rails'
 
 #~~~~~~~~~~~~~~~~~ TheRole ~~~~~~~~~~~~~~~~~#
 
-if ENV['RAILS_ENV'] != 'development'
-  gem 'the_role', '3.8.2'
-else
-  gem 'the_role',
-    path: '../the_role',
-    branch: 'master'
-
+# RAILS_ENV=development bundle install
+if ENV['RAILS_ENV'] == 'development'
   gem 'the_role_api',
-    path: '../the_role_api',
-    branch: 'master'
+    path: '../the_role_api'
 
   gem 'the_role_management_panel',
-    path: '../the_role_management_panel',
-    branch: 'Beartech-add_div_ids'
-
-  gem 'the_string_to_slug',
-    path: '../the_string_to_slug',
-    branch: 'master'
+    path: '../the_role_management_panel'
+else
+  gem 'the_role', '3.8.2'
 end
 
 # Other

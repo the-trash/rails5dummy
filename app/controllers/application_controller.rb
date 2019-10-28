@@ -30,6 +30,6 @@ class ApplicationController < ActionController::Base
     end
 
     I18n.locale = locale
-    redirect_to(:back) if params[:locale]
+    redirect_back(fallback_location: root_path) if params[:locale]
   end
 end

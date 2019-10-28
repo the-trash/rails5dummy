@@ -1,9 +1,8 @@
 # README
 
-git clone
+### How to start the testing application
 
-RAILS_ENV=development bundle install
-
-bundle exec rake db:bootstrap_and_seed
-
-bundle exec rails s
+- git clone
+- RAILS_ENV=development bundle install
+- bundle exec rake db:bootstrap_and_seed
+- bundle exec rails s

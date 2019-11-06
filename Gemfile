@@ -22,7 +22,7 @@ if ENV['RAILS_ENV'] == 'development'
   gem 'the_role_management_panel',
     path: '../the_role_management_panel'
 else
-  gem 'the_role', '3.8.2'
+  gem 'the_role', '~> 3.9'
 end
 
 # Other
